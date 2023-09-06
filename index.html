@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traitement d'image</title>
+</head>
+<body>
+    <h1>Téléchargez une image</h1>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*">
+        <input type="submit" value="Télécharger et traiter">
+    </form>
+    <h2>Image traitée :</h2>
+    <img id="processed-image" src="/display_image" alt="Image traitée">
+</body>
+</html>
